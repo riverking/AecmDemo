@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start_no_aec_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不开启aec测试" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/start_no_aec_test"
+            android:layout_marginLeft="10dp"
+            android:text="播放测试音频"
+            android:id="@+id/play_no_aec_test"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start_ori_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原生aec测试" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/start_ori_test"
+            android:layout_marginLeft="10dp"
+            android:text="播放测试音频"
+            android:id="@+id/play_ori_test"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start_webrtc_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="webrtc-aec测试" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/start_webrtc_test"
+            android:layout_marginLeft="10dp"
+            android:text="播放测试音频"
+            android:id="@+id/play_webrtc_test"/>
+        <EditText
+            android:id="@+id/edit_delay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/play_webrtc_test"
+            android:layout_marginLeft="10dp"
+            android:digits="0123456789"
+            android:maxLength="3"
+            android:hint="100"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/stop_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止测试" />
+
+</LinearLayout>
