@@ -26,6 +26,7 @@ public class VoiceRecorder {
     }
 
     public void release() {
+        //添加注释
         recorder.release();
     }
 }
